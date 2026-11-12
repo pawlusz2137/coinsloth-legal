@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Coinsloth</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; color: #2a1a0f; background: #f7f0e4; line-height: 1.7; font-size: 16px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 18px; margin-top: 36px; margin-bottom: 8px; }
+    p, li { color: #3b2a1d; }
+    ul { padding-left: 20px; }
+    .meta { color: #6b5444; font-size: 14px; margin-bottom: 28px; }
+    .lang { font-size: 14px; margin-bottom: 20px; }
+    .box { background: #fffaf1; border: 1px solid #ede3d3; border-radius: 16px; padding: 14px 18px; margin: 18px 0; }
+    a { color: #2f5d3a; }
+  </style>
+</head>
+<body>
+<p class="lang"><a href="privacy-pl.html">Polski</a> · <a href="index.html">Coinsloth</a></p>
+<h1>Privacy Policy</h1>
+<p class="meta">Coinsloth &nbsp;·&nbsp; Last updated: November 12, 2026</p>
+
+<p>Coinsloth is a personal finance app. <strong>Your financial data stays on your device.</strong> The only thing that leaves your phone is a photo of a receipt, and only when you agree to scan it with AI.</p>
+
+<h2>1. Who we are</h2>
+<p>Coinsloth is made by an independent developer. For any privacy question, request or complaint, write to <a href="mailto:support.coinsloth@gmail.com">support.coinsloth@gmail.com</a>.</p>
+
+<h2>2. Data stored only on your device</h2>
+<ul>
+  <li>Your expenses, income, recurring payments, categories, settings and the receipt photos you keep are stored in a database in the app’s storage on your device.</li>
+  <li>We have no user accounts and no access to this data.</li>
+  <li>The backup file you create with “Export data” stays wherever you save or send it. We never receive it.</li>
+</ul>
+
+<h2>3. Receipt scanning with AI (only after your consent)</h2>
+<p>Before the first scan the app asks for your permission. If you agree:</p>
+<ul>
+  <li>The photo of the receipt (and your list of category names, so the AI can assign categories) is sent over an encrypted connection to our server, which runs on Cloudflare.</li>
+  <li>Our server passes it on to <strong>Google Gemini</strong> (an AI service) to read the store, date and items, and returns the result to the app.</li>
+  <li><strong>Our server does not store the photo, the items, the categories or the AI’s answer.</strong> It only keeps what is described in section 4.</li>
+  <li>Google processes the photo under its own terms and privacy policy (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). We use Google’s paid Gemini API, under which Google does not use your content to train its models; Google may keep it for a limited time for abuse monitoring, as described in its terms.</li>
+  <li>If you do not agree, nothing is sent and you can still add every expense by hand.</li>
+</ul>
+<p>You can withdraw your consent at any time in <em>Settings → Receipt scanning → AI receipt reading</em>. Withdrawing blocks scanning; it does not delete your data.</p>
+<p>Receipts can contain personal information (for example the last digits of a payment card or a loyalty-card number). Please avoid photographing parts of a receipt you do not want to share.</p>
+
+<h2>4. What our server stores</h2>
+<ul>
+  <li>A <strong>random device identifier</strong> (a UUID generated on your device and kept in the iOS Keychain). It contains no information about you.</li>
+  <li><strong>Scan counters</strong> for that identifier: how many free scans were used and, for paid plans, how many scans were used today and this month.</li>
+  <li>A <strong>short-lived record</strong> of your most recent scans (an internal id, time and model name, kept for about 10 minutes) so that one automatic correction of a scan is not counted as a new scan.</li>
+  <li><strong>Technical logs</strong> contain only the time, the AI model, whether the scan was counted and error codes — no photos, no content, no identifier.</li>
+  <li>Cloudflare processes your IP address to deliver the connection and to limit the number of requests per minute. We do not store IP addresses.</li>
+</ul>
+<p>We use this only to run the scan limits and to protect the service from abuse. We do not use it for advertising, profiling or analytics, and we do not sell it.</p>
+
+<h2>5. Exchange rates</h2>
+<p>If you use more than one currency, the app asks a public exchange-rate service (Frankfurter, <a href="https://www.frankfurter.app">frankfurter.app</a>) for current rates. The request contains no personal or financial data; like any internet request, it reveals your IP address to that service.</p>
+
+<h2>6. Purchases</h2>
+<p>If you buy a paid plan, the payment is handled entirely by Apple. We do not receive your payment details.</p>
+
+<h2>7. No tracking</h2>
+<p>Coinsloth contains no advertising, no analytics and no third-party tracking.</p>
+
+<h2>8. Deleting your data</h2>
+<ul>
+  <li><em>Settings → Data &amp; backup → Delete all data</em> removes everything stored on your device (after you export a backup) <strong>and</strong> asks our server to delete the scan counters for your device identifier.</li>
+  <li>If you cannot use that option (for example you can no longer open the app), email <a href="mailto:support.coinsloth@gmail.com">support.coinsloth@gmail.com</a> and we will work with you to remove the data linked to your device.</li>
+  <li>Deleting the app removes the data stored on your device. Backups of your phone made by Apple (for example iCloud Backup) may contain the app’s data; you control them in your device settings.</li>
+</ul>
+
+<h2>9. Your rights</h2>
+<p>Depending on where you live (for example in the EU/EEA under the GDPR) you may have the right to access, correct, delete or restrict the use of your personal data, to object to its processing and to withdraw consent at any time. The legal bases we rely on are your consent (sending receipt photos to AI), our legitimate interest in running the service and protecting it from abuse (scan counters), and performing the service you asked for. You also have the right to complain to your data protection authority (in Poland: the President of the Personal Data Protection Office, UODO).</p>
+
+<h2>10. Children</h2>
+<p>Coinsloth is not directed at children under 16 and we do not knowingly collect their data.</p>
+
+<h2>11. Changes</h2>
+<p>If we change how we handle data, we will update this page and the date above, and ask for your consent again where the law requires it.</p>
+
+</body>
+</html>

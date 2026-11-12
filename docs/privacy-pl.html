@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polityka prywatności — Coinsloth</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; color: #2a1a0f; background: #f7f0e4; line-height: 1.7; font-size: 16px; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    h2 { font-size: 18px; margin-top: 36px; margin-bottom: 8px; }
+    p, li { color: #3b2a1d; }
+    ul { padding-left: 20px; }
+    .meta { color: #6b5444; font-size: 14px; margin-bottom: 28px; }
+    .lang { font-size: 14px; margin-bottom: 20px; }
+    .box { background: #fffaf1; border: 1px solid #ede3d3; border-radius: 16px; padding: 14px 18px; margin: 18px 0; }
+    a { color: #2f5d3a; }
+  </style>
+</head>
+<body>
+<p class="lang"><a href="privacy.html">English</a> · <a href="index.html">Coinsloth</a></p>
+<h1>Polityka prywatności</h1>
+<p class="meta">Coinsloth &nbsp;·&nbsp; Ostatnia aktualizacja: 12 listopada 2026</p>
+
+<p>Coinsloth to aplikacja do śledzenia finansów osobistych. <strong>Twoje dane finansowe zostają na Twoim urządzeniu.</strong> Jedyne, co opuszcza telefon, to zdjęcie paragonu — i to tylko wtedy, gdy zgodzisz się na jego odczyt przez AI.</p>
+
+<h2>1. Kim jesteśmy</h2>
+<p>Coinsloth tworzy niezależny deweloper. W sprawach prywatności — pytań, próśb i skarg — pisz na <a href="mailto:support.coinsloth@gmail.com">support.coinsloth@gmail.com</a>.</p>
+
+<h2>2. Dane przechowywane tylko na Twoim urządzeniu</h2>
+<ul>
+  <li>Wydatki, przychody, płatności cykliczne, kategorie, ustawienia i zdjęcia paragonów, które zachowujesz, są zapisane w bazie danych w pamięci aplikacji na Twoim urządzeniu.</li>
+  <li>Nie mamy kont użytkowników ani dostępu do tych danych.</li>
+  <li>Plik kopii zapasowej tworzony przez „Eksportuj dane” zostaje tam, gdzie go zapiszesz lub wyślesz. Nigdy do nas nie trafia.</li>
+</ul>
+
+<h2>3. Odczyt paragonów przez AI (tylko po Twojej zgodzie)</h2>
+<p>Przed pierwszym skanem aplikacja prosi o zgodę. Jeśli się zgodzisz:</p>
+<ul>
+  <li>Zdjęcie paragonu (oraz lista nazw Twoich kategorii, żeby AI mogło je przypisać) jest wysyłane szyfrowanym połączeniem na nasz serwer, działający w Cloudflare.</li>
+  <li>Nasz serwer przekazuje je do <strong>Google Gemini</strong> (usługi AI), która odczytuje sklep, datę i pozycje, a wynik wraca do aplikacji.</li>
+  <li><strong>Nasz serwer nie zapisuje zdjęcia, pozycji, kategorii ani odpowiedzi AI.</strong> Przechowuje tylko to, co opisano w punkcie 4.</li>
+  <li>Google przetwarza zdjęcie według własnych zasad i polityki prywatności (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Korzystamy z płatnego API Gemini, w którym Google nie używa Twoich treści do trenowania swoich modeli; może je przechowywać przez ograniczony czas w celu wykrywania nadużyć, zgodnie ze swoimi warunkami.</li>
+  <li>Jeśli się nie zgodzisz, nic nie jest wysyłane, a każdy wydatek nadal możesz dodać ręcznie.</li>
+</ul>
+<p>Zgodę możesz w każdej chwili wycofać w <em>Ustawienia → Skanowanie paragonów → Odczyt paragonów przez AI</em>. Wycofanie blokuje skanowanie, ale nie usuwa Twoich danych.</p>
+<p>Paragony mogą zawierać dane osobowe (np. ostatnie cyfry karty płatniczej lub numer karty lojalnościowej). Unikaj fotografowania fragmentów paragonu, którymi nie chcesz się dzielić.</p>
+
+<h2>4. Co zapisuje nasz serwer</h2>
+<ul>
+  <li><strong>Losowy identyfikator urządzenia</strong> (UUID wygenerowany na Twoim urządzeniu i przechowywany w pęku kluczy iOS). Nie zawiera żadnych informacji o Tobie.</li>
+  <li><strong>Liczniki skanów</strong> dla tego identyfikatora: ile darmowych skanów wykorzystano, a w płatnych planach — ile skanów dziś i w tym miesiącu.</li>
+  <li><strong>Krótkotrwały zapis</strong> ostatnich skanów (wewnętrzny numer, czas i nazwa modelu, przechowywany ok. 10 minut), żeby jedna automatyczna korekta skanu nie była liczona jako nowy skan.</li>
+  <li><strong>Logi techniczne</strong> zawierają tylko czas, model AI, informację, czy skan został zaliczony, i kody błędów — bez zdjęć, treści i identyfikatora.</li>
+  <li>Cloudflare przetwarza Twój adres IP, żeby zestawić połączenie i ograniczać liczbę zapytań na minutę. Nie zapisujemy adresów IP.</li>
+</ul>
+<p>Używamy tego wyłącznie do pilnowania limitów skanów i ochrony usługi przed nadużyciami. Nie wykorzystujemy tego do reklam, profilowania ani analityki i niczego nie sprzedajemy.</p>
+
+<h2>5. Kursy walut</h2>
+<p>Jeśli używasz więcej niż jednej waluty, aplikacja pyta publiczny serwis kursów walut (Frankfurter, <a href="https://www.frankfurter.app">frankfurter.app</a>) o aktualne kursy. Zapytanie nie zawiera danych osobowych ani finansowych; jak każde zapytanie internetowe, ujawnia temu serwisowi Twój adres IP.</p>
+
+<h2>6. Zakupy</h2>
+<p>Jeśli kupujesz plan płatny, płatność w całości obsługuje Apple. Nie otrzymujemy Twoich danych płatniczych.</p>
+
+<h2>7. Brak śledzenia</h2>
+<p>Coinsloth nie zawiera reklam, analityki ani śledzenia przez podmioty trzecie.</p>
+
+<h2>8. Usuwanie danych</h2>
+<ul>
+  <li><em>Ustawienia → Dane i kopia zapasowa → Usuń wszystkie dane</em> usuwa wszystko z Twojego urządzenia (po wykonaniu kopii zapasowej) <strong>oraz</strong> prosi nasz serwer o skasowanie liczników skanów dla identyfikatora Twojego urządzenia.</li>
+  <li>Jeśli nie możesz skorzystać z tej opcji (np. nie da się już otworzyć aplikacji), napisz na <a href="mailto:support.coinsloth@gmail.com">support.coinsloth@gmail.com</a>, a pomożemy usunąć dane powiązane z Twoim urządzeniem.</li>
+  <li>Usunięcie aplikacji usuwa dane zapisane na urządzeniu. Kopie zapasowe telefonu wykonywane przez Apple (np. iCloud) mogą zawierać dane aplikacji; kontrolujesz je w ustawieniach urządzenia.</li>
+</ul>
+
+<h2>9. Twoje prawa</h2>
+<p>W zależności od miejsca zamieszkania (np. w UE/EOG na podstawie RODO) możesz mieć prawo dostępu do danych osobowych, ich sprostowania, usunięcia lub ograniczenia przetwarzania, sprzeciwu wobec przetwarzania oraz wycofania zgody w dowolnym momencie. Podstawy prawne, na których się opieramy, to Twoja zgoda (wysyłanie zdjęć paragonów do AI), nasz prawnie uzasadniony interes w prowadzeniu usługi i ochronie jej przed nadużyciami (liczniki skanów) oraz wykonanie usługi, o którą prosisz. Masz też prawo wnieść skargę do organu ochrony danych (w Polsce: Prezes Urzędu Ochrony Danych Osobowych).</p>
+
+<h2>10. Dzieci</h2>
+<p>Coinsloth nie jest skierowany do dzieci poniżej 16 lat i świadomie nie zbieramy ich danych.</p>
+
+<h2>11. Zmiany</h2>
+<p>Jeśli zmienimy sposób przetwarzania danych, zaktualizujemy tę stronę i datę powyżej, a tam, gdzie wymaga tego prawo, ponownie poprosimy o zgodę.</p>
+
+</body>
+</html>
